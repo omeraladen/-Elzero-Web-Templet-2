@@ -13,7 +13,9 @@
             transition: .5s ease;
         }
         
-        
+        h3{
+            letter-spacing: 3px;
+        }
         
         display: flex;
         text-decoration: none;
@@ -22,13 +24,13 @@
 
         i{
             color: #fff;
-            font-size: 27px;
+            font-size: 30px;
             margin-right: 7px;
             
         }
         
         .logo-text{
-            opacity: .8;
+            
             font-family: 'Open Sans', sans-serif;
             font-family: 'Roboto Mono', monospace;
             font-weight: 400;
@@ -44,7 +46,8 @@
         
         
         ul{
-            margin-left: 30px;
+            opacity: .6;
+            margin-left: 40px;
             display: flex;
             
           
@@ -52,7 +55,7 @@
             
             li a{
                 
-                padding: 40px 10px;
+                padding: 40px 20px;
                 transition: .3s;
             }
             
@@ -64,6 +67,7 @@
                 
                 color: #fff;
                 margin-top: 43px;
+                margin-left: -10px;
                 opacity: .5;
             }
             
@@ -73,10 +77,24 @@
 
     
     .form{
-        
-      
+           
+            .circul{
+                opacity: .6;
+                position: absolute;
+               bottom: 30px;
+               margin-left: -10px;
+                
+                background: #000;
+                width: 42px;
+                height: 42px;
+                border: 3px solid #fff;
+                border-radius: 50%;
+                
+                
+            }
         
         button{
+            margin-left: 20px;
             cursor: pointer;
             padding: 8px 30px;
             border-radius: 4px;
@@ -96,25 +114,33 @@
         }
         
         i{
+            
             cursor: pointer;
-            opacity: .8;
+            opacity: .6;
             margin-right: 20px;
             color: #fff; 
             font-size: 24px;
+
+            background: #000;
+         
+          
+            
         }    
     }
     
     
 }
+// header{
+//     position: absolute;
+// }
 
-
-.container::after{
-    content: "";
-    height: 1px;
-    background-color: #a2a2a2;
-    width: calc(100% - 30px);
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    opacity: .8;
-}
+// .container::after{
+//     content: "";
+//     height: 1px;
+//     background-color: #a2a2a2;
+//     width: 100%;
+//     position: absolute;
+//     bottom: 0;
+//     left: 15px;
+//     opacity: .8;
+// }
