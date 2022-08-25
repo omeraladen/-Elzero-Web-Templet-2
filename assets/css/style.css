@@ -173,6 +173,29 @@ ul {
   margin-left: 20px;
 }
 
+.landing .right-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.landing .right-side .images {
+  position: absolute;
+}
+
+.landing .right-side .blue {
+  width: 300px;
+}
+
+.landing .right-side .black {
+  width: 340px;
+}
+
+@media (max-width: 1177px) {
+  .landing .right-side .blue {
+    display: none;
+  }
+}
+
 .landing::after {
   position: absolute;
   bottom: -47rem;

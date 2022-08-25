@@ -41,11 +41,13 @@
         }
     }
     
+    
     nav{
         flex: 1;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
 
         
         
@@ -75,7 +77,10 @@
                 opacity: .5;
             }
             
+            
         }
+
+        
     }
     
 
@@ -152,6 +157,8 @@
         font-size: 40px;
         cursor: pointer;
      }
+
+
      .uil-multiply{
         
         display: none;

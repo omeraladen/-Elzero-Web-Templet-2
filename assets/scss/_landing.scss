@@ -135,6 +135,8 @@
         color: #fff;
 
         .policy{
+
+            
             
             display: flex;
             
@@ -143,6 +145,8 @@
                 cursor: pointer;
                 margin-left: 30px;
             }
+
+            
         }
 
         .socials {
@@ -153,6 +157,46 @@
                 margin-left: 20px;
             }
         }
+
+        
+
+    }
+
+    .right-side{
+
+        // .gradien-bg{
+        //     position:absolute;
+            
+        //     height: 45rem;
+        //     width: 50rem;
+        // }
+       
+        display: flex;
+        justify-content:flex-end;
+      
+
+        .images {
+           
+          position: absolute;
+
+        }
+
+        .blue{
+            width: 300px;
+           
+        }
+        .black{
+            width: 340px;
+
+            
+        }
+
+        @media (max-width:1177px) {
+            .blue{
+                display: none;
+            }
+        }
+
 
     }
 }
@@ -166,7 +210,4 @@
     width: 100%;
     opacity: .3;
 
-
-    
-    
 }
