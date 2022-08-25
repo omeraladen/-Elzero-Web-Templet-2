@@ -1,23 +1,27 @@
 .landing{
     width: 100%;
-    min-height: 100vh;
-    background-color: #1f2021;
-    background-image: url(../images/black.jpg);
+    min-height: 100%;
     background-size: cover;
     position: relative;
+    
 
-
+    
+    
     .overlay {
-       position: absolute;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        
+            
 
     }
 
     .left-side{
-       // background: blue;
+       
         position: absolute;
         left: 0;
+        //background: red;
         
-        // transform: translateY(50%);
         width: 50%;
         padding: 50px;
 
@@ -55,70 +59,114 @@
             .parts{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                gap: 4%;
+                gap: 6.4%;
+               
                 position: absolute;
-            }
+            
 
-            .first{
-                .num{
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-                .state{
-                    font-size: 18px;
-                    font-weight: bold;
-                    opacity: .6;
-                    margin-top: -30px;
-                }
-                
-            }
-
-            .secound{
-                p{
-                    font-size: 20px;
-                    font-weight: bold;
-                    
-                   
-
-                     i{
+                .first{
+                    .num{
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .state{
                         
-                        font-size: 17px;
-                        color: rgba(187, 182, 24, 0.867);
-                        margin: 0;
-                        padding: 0;
+                        font-size: 14px;
+                        font-weight: bold;
+                        opacity: .6;
+                        margin-top: -30px;
+                    }
+                    
+                }
+
+                .secound{
+                    p{
+                        font-size: 14px;
+                        font-weight: bold;
+                        
+                    
+                        i:nth-child(2),i:nth-child(3),i:nth-child(4),i:nth-child(5){
+                            margin-left: -8px;
+                        }
+                        i{
+
+                        
+                            
+                            font-size: 14px;
+                            color: rgba(236, 230, 60, 0.867);
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                    .rating{
+                        opacity: .6;
+                        margin-top: -30px;
+                        letter-spacing: 5px;
                     }
                 }
-                .rating{
+
+
+
+                .therd{
+                    cursor: pointer;
+                    color: #ddd;
+                display: flex;
+                justify-content: flex-end;
+                    font-size: 30px;
                     opacity: .6;
-                    margin-top: -30px;
-                }
-            }
 
-
-
-            .therd{
-                cursor: pointer;
-                color: #ddd;
-               
-                font-size: 40px;
-                opacity: .6;
-
-                .fa-apple{
-                    margin-right: 20px;
-                }
-                
+                    .fa-apple{
+                        margin-right: 20px;
+                    }        
             }
         }
-       }
+      }
+    }
 
+    .after{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: .5;
+        position: absolute;
+        left: 5rem;
+        right: 5rem;
+        bottom: -50rem;
+        color: #fff;
 
+        .policy{
+            
+            display: flex;
+            
+
+            p{
+                cursor: pointer;
+                margin-left: 30px;
+            }
+        }
+
+        .socials {
+
+            i{
+                cursor: pointer;
+                font-size: 20px;
+                margin-left: 20px;
+            }
+        }
+
+    }
 }
-// .landing::after{
-//     content: "";
-//     height: 1px;
-//     background-color: #a2a2a2;
-//     width: 100%;
-//     position: absolute;
-//     bottom: 10%;
-//     opacity: .3;
-// }
+.landing::after{
+    position: absolute;
+    bottom: -47rem;
+    
+    content: "";
+    height: 1px;
+    background-color: #a2a2a2;
+    width: 100%;
+    opacity: .3;
+
+
+    
+    
+}

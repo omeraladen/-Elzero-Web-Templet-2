@@ -10,13 +10,16 @@ html{
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/two.jpg);
+    background-size: cover;
     
-    background: #000;
+   
 }
 ul {
     list-style: none;
 }
 .container{
+    
     margin-left: auto;
     margin-right: auto;
 }
@@ -30,14 +33,17 @@ ul {
 
 @media (min-width:992px) {
     .container{
+        
         width: 970px;
+       
         
     }
     
 }
-@media (min-width:1400px) {
+@media (min-width:1200px) {
     .container{
-        width: 1370px;
+      
+        width: 90vw;
     }
     
 }

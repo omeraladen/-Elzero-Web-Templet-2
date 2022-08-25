@@ -1,8 +1,12 @@
 
-.container{
+#header{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
+      padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;    
     position: relative; // Parent
     
     
@@ -123,16 +127,45 @@
 
             background: #000;
          
+           
           
             
         }    
+
+        
     }
     
-    
+    @media (max-width:998px) {
+        .form , .fa-angle-down , nav ul li a {
+           
+            
+            display: none;
+        }
+
+       
+    }
+
+    @media (max-width:998px) {
+        
+        .uil-bars{
+        color: #fff;
+        font-size: 40px;
+        cursor: pointer;
+     }
+     .uil-multiply{
+        
+        display: none;
+        color: #fff;
+        font-size: 35px;
+        cursor: pointer;
+
+        
+     }
+
+       
+    }
 }
-// header{
-//     position: absolute;
-// }
+
 
 // .container::after{
 //     content: "";

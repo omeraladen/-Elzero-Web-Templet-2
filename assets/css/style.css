@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/two.jpg);
+  background-size: cover;
 }
 
 ul {
@@ -34,23 +35,23 @@ ul {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .container {
-    width: 1370px;
+    width: 90vw;
   }
 }
 
 .landing {
   width: 100%;
-  min-height: 100vh;
-  background-color: #1f2021;
-  background-image: url(../images/black.jpg);
+  min-height: 100%;
   background-size: cover;
   position: relative;
 }
 
 .landing .overlay {
   position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .landing .left-side {
@@ -94,115 +95,162 @@ ul {
 .landing .left-side .icons .parts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4%;
+  gap: 6.4%;
   position: absolute;
 }
 
-.landing .left-side .icons .first .num {
-  font-size: 20px;
+.landing .left-side .icons .parts .first .num {
+  font-size: 16px;
   font-weight: bold;
 }
 
-.landing .left-side .icons .first .state {
-  font-size: 18px;
+.landing .left-side .icons .parts .first .state {
+  font-size: 14px;
   font-weight: bold;
   opacity: .6;
   margin-top: -30px;
 }
 
-.landing .left-side .icons .secound p {
-  font-size: 20px;
+.landing .left-side .icons .parts .secound p {
+  font-size: 14px;
   font-weight: bold;
 }
 
-.landing .left-side .icons .secound p i {
-  font-size: 17px;
-  color: rgba(187, 182, 24, 0.867);
+.landing .left-side .icons .parts .secound p i:nth-child(2), .landing .left-side .icons .parts .secound p i:nth-child(3), .landing .left-side .icons .parts .secound p i:nth-child(4), .landing .left-side .icons .parts .secound p i:nth-child(5) {
+  margin-left: -8px;
+}
+
+.landing .left-side .icons .parts .secound p i {
+  font-size: 14px;
+  color: rgba(236, 230, 60, 0.867);
   margin: 0;
   padding: 0;
 }
 
-.landing .left-side .icons .secound .rating {
+.landing .left-side .icons .parts .secound .rating {
   opacity: .6;
   margin-top: -30px;
+  letter-spacing: 5px;
 }
 
-.landing .left-side .icons .therd {
+.landing .left-side .icons .parts .therd {
   cursor: pointer;
   color: #ddd;
-  font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
   opacity: .6;
 }
 
-.landing .left-side .icons .therd .fa-apple {
+.landing .left-side .icons .parts .therd .fa-apple {
   margin-right: 20px;
 }
 
-.container {
+.landing .after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: .5;
+  position: absolute;
+  left: 5rem;
+  right: 5rem;
+  bottom: -50rem;
+  color: #fff;
+}
+
+.landing .after .policy {
+  display: flex;
+}
+
+.landing .after .policy p {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.landing .after .socials i {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.landing::after {
+  position: absolute;
+  bottom: -47rem;
+  content: "";
+  height: 1px;
+  background-color: #a2a2a2;
+  width: 100%;
+  opacity: .3;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   position: relative;
 }
 
-.container a {
+#header a {
   display: flex;
   text-decoration: none;
   align-items: center;
   color: #fff;
 }
 
-.container a .fa-dice-d20:hover {
+#header a .fa-dice-d20:hover {
   opacity: .8;
   transition: .5s ease;
 }
 
-.container a h3 {
+#header a h3 {
   letter-spacing: 3px;
 }
 
-.container a i {
+#header a i {
   color: #fff;
   font-size: 30px;
   margin-right: 7px;
 }
 
-.container a .logo-text {
+#header a .logo-text {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
 }
 
-.container nav {
+#header nav {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.container nav ul {
+#header nav ul {
   opacity: .6;
   margin-left: 40px;
   display: flex;
 }
 
-.container nav ul li a {
+#header nav ul li a {
   padding: 40px 20px;
   transition: .3s;
 }
 
-.container nav ul li a:hover {
+#header nav ul li a:hover {
   opacity: .7;
 }
 
-.container nav ul .fa-angle-down {
+#header nav ul .fa-angle-down {
   color: #fff;
   margin-top: 43px;
   margin-left: -10px;
   opacity: .5;
 }
 
-.container .form .circul {
+#header .form .circul {
   opacity: .6;
   position: absolute;
   bottom: 30px;
@@ -214,7 +262,7 @@ ul {
   border-radius: 50%;
 }
 
-.container .form button {
+#header .form button {
   margin-left: 20px;
   cursor: pointer;
   padding: 8px 30px;
@@ -225,17 +273,37 @@ ul {
   font-weight: bold;
 }
 
-.container .form button:hover {
+#header .form button:hover {
   opacity: .8;
   transition: .3s ease;
 }
 
-.container .form i {
+#header .form i {
   cursor: pointer;
   opacity: .6;
   margin-right: 20px;
   color: #fff;
   font-size: 24px;
   background: #000;
+}
+
+@media (max-width: 998px) {
+  #header .form, #header .fa-angle-down, #header nav ul li a {
+    display: none;
+  }
+}
+
+@media (max-width: 998px) {
+  #header .uil-bars {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  #header .uil-multiply {
+    display: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style.css.map */
